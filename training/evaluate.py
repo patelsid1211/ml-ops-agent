@@ -3,6 +3,8 @@ import mlflow
 import mlflow.sklearn
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use("Agg")  # non-interactive backend, required for worker threads
 import matplotlib.pyplot as plt
 from pathlib import Path
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
